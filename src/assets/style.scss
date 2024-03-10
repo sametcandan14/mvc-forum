@@ -1,3 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: gray;
+  background: rgb(88, 88, 88);
+  color: rgb(233, 233, 233);
+  font-family: "";
+}
+
+.container {
+  width: 70vw;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .post {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+
+      p {
+        cursor: pointer;
+        color: rgb(221, 189, 3);
+      }
+    }
+  }
 }
