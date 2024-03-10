@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "user": "Mehmet",
+      "title": "React MVC Pattern",
+      "text": "MVC mimarisi ile nasıl bileşenleri yönetirim?"
+    },
+    {
+      "id": "2",
+      "user": "Ali",
+      "title": "React MVVM Patterni",
+      "text": "Bu nedir?"
+    }
+  ]
+}
