@@ -4,13 +4,23 @@
       "id": "1",
       "user": "Mehmet",
       "title": "React MVC Pattern",
-      "text": "MVC mimarisi ile nasıl bileşenleri yönetirim?"
+      "text": "MVC mimarisi ile nasıl bileşenleri yönetirim?",
+      "date": "2024-03-12T03:13:11.534Z"
     },
     {
       "id": "2",
       "user": "Ali",
       "title": "React MVVM Patterni",
-      "text": "Bu nedir?"
+      "text": "Bu nedir?",
+      "date": "2024-03-12T03:13:11.534Z"
+    },
+
+    {
+      "id": "195f7cf1-3ca2-4ded-a877-dc2c5b79d20d",
+      "date": "2024-03-12T03:13:11.534Z",
+      "title": "deneme başlık",
+      "text": "deneme yazı",
+      "user": "deneme"
     }
   ]
 }

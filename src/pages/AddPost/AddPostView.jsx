@@ -1,7 +1,7 @@
-const AddPostView = ({ onInputChange }) => {
+const AddPostView = ({ onInputChange, handleSubmit }) => {
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2>Yeni Gönderi Ekle</h2>
         <fieldset>
           <label>Kullanıcı Adı</label>
@@ -13,11 +13,16 @@ const AddPostView = ({ onInputChange }) => {
         </fieldset>
         <fieldset>
           <label>Başlık</label>
-          <input type="text" placeholder="Başlık Giriniz" />
+          <input
+            onChange={(e) => onInputChange("title", e.target.value)}
+            type="text"
+            placeholder="Başlık Giriniz"
+          />
         </fieldset>
         <fieldset>
           <label>Açıklama</label>
           <textarea
+            onChange={(e) => onInputChange("text", e.target.value)}
             type="text"
             placeholder="Açıklamanızı Giriniz"
             maxLength={"100"}
