@@ -14,13 +14,19 @@
       "text": "Bu nedir?",
       "date": "2024-03-12T03:13:11.534Z"
     },
-
     {
       "id": "195f7cf1-3ca2-4ded-a877-dc2c5b79d20d",
       "date": "2024-03-12T03:13:11.534Z",
       "title": "deneme başlık",
       "text": "deneme yazı",
       "user": "deneme"
+    },
+    {
+      "id": "7e2d308c-78c8-46ca-a899-b15adc718517",
+      "date": "2024-03-13T03:11:35.725Z",
+      "title": "Selam",
+      "text": "Selam selam",
+      "user": "Mehmet"
     }
   ]
 }

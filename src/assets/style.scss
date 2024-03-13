@@ -126,3 +126,46 @@ form {
     }
   }
 }
+
+//Popup
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(129, 129, 129, 0.479);
+  display: grid;
+  place-items: center;
+
+  .popup {
+    height: 80%;
+    width: 70%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 6px;
+    padding: 10px;
+
+    .btn-wrap {
+      display: flex;
+      color: black;
+      justify-content: space-between;
+
+      span {
+        color: gold;
+      }
+
+      button {
+        padding: 10px;
+        border-radius: 6px;
+        background: crimson;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,19 +1,37 @@
 import PopupController from "../../components/PopupController";
 
-const ListPostsView = ({ data, showPopup, setShowPopup }) => {
+const ListPostsView = ({
+  data,
+  showPopup,
+  setShowPopup,
+  userName,
+  setUserName,
+}) => {
   return (
     <div className="container">
       {!data && <p className="load">Yükleniyor...</p>}
       {data?.map((post) => (
-        <div className="post" key={post.id}>
-          <div className="info">
-            <h3>{post.title}</h3>
-            <p onClick={() => setShowPopup(true)}>{post.user}</p>
+        <div key={post.id}>
+          <div className="post">
+            <div className="info">
+              <h3>{post.title}</h3>
+              <p
+                onClick={() => {
+                  setUserName(post.user);
+                  setShowPopup(true);
+                }}
+              >
+                {post.user}
+              </p>
+            </div>
+            <p className="text">{post.text}</p>
           </div>
-          <p className="text">{post.text}</p>
         </div>
       ))}
-      {showPopup && <PopupController username={post.user} />}
+
+      {showPopup && (
+        <PopupController setShowPopup={setShowPopup} userName={userName} />
+      )}
     </div>
   );
 };

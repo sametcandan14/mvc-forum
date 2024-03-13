@@ -5,8 +5,7 @@ import axios from "axios";
 const ListPostsController = () => {
   const [data, setData] = useState();
   const [showPopup, setShowPopup] = useState(false);
-
-  console.log("selam");
+  const [userName, setUserName] = useState(false);
 
   useEffect(() => {
     axios.get("http://localhost:3050/posts").then((res) => setData(res.data));
@@ -16,6 +15,8 @@ const ListPostsController = () => {
       data={data}
       setShowPopup={setShowPopup}
       showPopup={showPopup}
+      userName={userName}
+      setUserName={setUserName}
     />
   );
 };
